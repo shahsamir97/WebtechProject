@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Logo</title>
+    <style media="screen">
+      body
+      {
+        margin: 0;
+        padding: 0;
+      }
+      nav
+      {
+        height: 80px;
+        background-color: #34495e;
+      }
+      ul{
+      margin: 0;
+      padding: 0;
+      }
+      ul li {
+        list-style:none;
+        display:inline-block;
+        float: center;
+        line-height: 30px;
+    
+      }
+      ul li a {
+        display:block;
+        text-decoration:none;
+        font-size:18px;
+        color: #AEB6BF;
+        font-family:consolas;
+        padding: 10px;
+        transition: 0.5s;
+        font-weight: bold;
+      }
+      ul li a:hover
+      {
+        color: #255784;
+        background: #D6DBDF;
+        box-shadow: 0 0 10px #D6DBDF, 0 0 40px #D6DBDF, 0 0 80px #D6DBDF; 
+      }
+
+      .title
+      {
+        font-family: consolas;
+        font-size: 43px;
+        font-weight: bold;
+        padding-right: 55%;
+        padding-top: 20px;
+        padding-left: 10px;
+        color: white;
+      }
+      .subtit
+      {
+        text-align: center;
+        padding-top: 15%;
+        font-size: 70px;
+        color: #34495e;
+        font-family: consolas;
+        font-weight: bold;
+        /*text-shadow:  0 0 10px #85929E , 0 0 40px #85929E , 0 0 80px #85929E ; */
+
+      }
+      .subtitle:before
+      {
+        content: 'get  : Aid';
+        animation: title infinite 5s;
+      }
+      @keyframes title
+      {
+        0%{content: 'get   : Aid'}
+        33%{content:'give  : Aid'}
+        66%{content:'Share : Projects'}
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="title"><span>Gaming Buddy</span></li>
+        <li><a href="log_in.php"><span>Log In</span></a></li>
+        <li><a href="#"><span>Become Sponsor</span></a></li>
+        <li><a href="user_signup.php"><span>Sign up</span></a></li>
+      </ul>
+    </nav>
+  <div class="subtit">
+    <span class="subtitle"></span>
+  </div>
+    
+    
+  </body>
+</html>

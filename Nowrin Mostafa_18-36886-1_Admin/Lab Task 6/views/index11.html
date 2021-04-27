@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Logo</title>
+    <style media="screen">
+      body
+      {
+        margin: 0;
+        padding: 0;
+        background: #000;
+      }
+      nav
+      {
+        height: 70px;
+        width: 100%;
+        background: #000;
+      }
+        ul{
+      margin:0;
+      margin-left: 1000px;
+      padding:0;
+      justify-content: center;
+      }
+      ul li {
+        list-style:none;
+        display:inline-block;
+        float:center;
+        line-height:30px;
+      }
+      ul li a {
+        display:block;
+        text-decoration:none;
+        font-size:18px;
+        color: #2196f3;
+        font-family:consolas;
+        padding: 10px;
+        transition: 0.5s;
+        font-weight: bolder;
+      }
+      ul li a:hover
+      {
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;      }
+      section
+      {
+        position:relative;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        font-family: consolas;
+      }
+      section:before
+      { content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #00BFFF;
+        z-index: 1;
+        mix-blend-mode: color;
+      }
+
+      section h1
+      {
+        color: #fff;
+        font-size: 4em;
+        filter: blur(1px);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                    0 0 20px rgba(255, 255, 255, 1),
+                    0 0 40px rgba(255, 255, 255, 1),
+                    0 0 80px rgba(255, 255, 255, 1),
+                    0 0 160px rgba(255, 255, 255, 1);
+      }
+
+      .maintitle:before
+      {
+        content: 'getAid';
+        animation: title infinite 3s;
+      }
+      @keyframes title
+      {
+        0%{content:'getAid'}
+        33%{content:'giveAid'}
+        66%{content:'postProject'}
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="log_in.php"><span>Log In</span></a></li>
+        <li><a href="#"><span>Become Sponsor</span></a></li>
+        <li><a href="user_signup.php"><span>Sign up</span></a></li>
+      </ul>
+    </nav>
+    <section>
+        <h1 >Gaming Buddy: <span class="maintitle"></span></<h1>
+    </section>
+
+  </body>
+</html>
