@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+}
+
+.center{
+    margin: auto;
+    text-align: center;
+}
+
+.center img{
+    display: block;
+    margin: auto;
+}

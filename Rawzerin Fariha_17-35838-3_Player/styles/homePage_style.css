@@ -1,0 +1,19 @@
+body{
+    background-size: contain ;
+    height: fit-content;
+    background-repeat: no-repeat;
+}
+slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.content h1{
+    font-weight: bold;
+    font-size: 50px;
+}

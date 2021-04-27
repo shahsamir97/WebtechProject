@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-list{
+    padding: 20px;
+    width: 100%;
+}
+
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    margin: 10px;
+}
+
+.row {
+    margin: 0 -5px;
+    display: inline-block;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+.card {
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card:hover{
+    opacity: 0.6;
+}
+
+.card img{
+    object-fit: fill;
+    height: 180px;
+}
+
+.top-headline{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.head-line{
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rectangular-button {
+    border-radius: 15px;
+    border: transparent;
+    color: white;
+    padding: 15px 25px 15px 25px;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    elevation: 8deg;
+}
+
+.next-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

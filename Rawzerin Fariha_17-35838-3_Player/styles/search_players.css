@@ -1,0 +1,189 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.search-box{
+    padding: 20px;
+    width: fit-content;
+    min-width: 400px;
+    height: 300px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+
+
+.list-item{
+    margin-top: 15px;
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item a{
+    text-decoration: none;
+}
+
+.visit-player-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.player-list{
+    border-radius: 15px;
+    height: fit-content;
+    flex: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rounded-avatar{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.rounded-avatar img{
+    object-fit: fill;
+    height: 80px;
+    width: 80px;
+}
+
+.list-item h4{
+    font-weight: bold;
+}
+
+ .addButton{
+    height: 50px;
+    width: 50px;
+}
+.rounded-input-field {
+    border-radius: 15px;
+    border: transparent;
+    background-color: #eeeeee;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.rectangular-button {
+    border-radius: 15px;
+    border: transparent;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    elevation: 8deg;
+}
+
+.drop-down-menu {
+    border: transparent;
+    background-color: #eeeeee;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.action-button {
+    float: right;
+}
+
+.input-field-margin {
+    margin: 10px;
+}
+.card {
+    border: dodgerblue solid 2px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    min-width: 500px;
+    padding: 10px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button-container button{
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.outlined-button{
+    text-decoration: none;
+    border:white solid 2px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.previous{
+    text-decoration: none;
+    border:dodgerblue solid 2px;
+    border-radius: 10px;
+    color: dodgerblue;
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.next{
+    text-decoration: none;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#snackBar {
+    font-size: 20px;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: aquamarine;
+    color: black;
+    transition: height 0.6s ease-out;
+}
+
+.snackbar-anim {
+    animation: fadeOut 3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        height: 0;
+        visibility: hidden;
+    }
+    0%{
+        height: 30px;
+        visibility: visible;
+    }
+}
